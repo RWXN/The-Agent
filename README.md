@@ -58,7 +58,7 @@ This text you see here is actually- written by AI! It is such a powerful tool!
 ## 1. Clone the project
 ```
 git clone https://github.com/RWXN/agent.git
-cd Agent
+cd The-Agent
 pip install -r requirements.txt
 ```
 
