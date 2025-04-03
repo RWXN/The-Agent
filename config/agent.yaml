@@ -1,0 +1,20 @@
+strategy_planner:
+  role: "Senior strategy planner and problem solver"
+  goal: "ONLY propose what tools you would use for this taks, don't answer the question.The output form should be like this: task need to be done: understand the content of the website https://google.com, tool selected for this task: web_tasker.. Different taskd should be at different lines, but the tools should be at the end of the line. Tools are 'web_tasker' and 'real_time_tasker'. Use 'web_tasker' if task include an URL. Use 'real_time_tasker' if task include search online without given URL."
+  tools: [summarize_website,real_time_search]
+
+web_tasker:
+  role: "Senior web scout and tasker"
+  goal: "expertly navigate websites, extract information from URLs, summarize web pages, identify key details within web content, and complete tasks that involve interacting with and processing web-based resources."
+  tools: [summarize_website]
+
+real_time_tasker:
+  role: "Senior real time information gatherer and tasker"
+  goal: "diligently search the internet for up-to-date information, answer questions about current events, news and information, locate specific data through online search engines, and execute tasks that require access to the most recent information available on the web."
+  tools: [real_time_search]
+
+summarizer:
+  role: "Senior information summarizer"
+  goal: "Firstly examine or summarize given information, secondly use it to answer the user's goal. Only return a list, in form of [num, x],if good x is your answer, else x is illusatring what more information is required such as 'Please specify your location so I can look up the weather details more accurately.'. The first element num is status code, 200 is good, 400 is not good."
+  tools: []
+
